@@ -1,0 +1,102 @@
+@evenColor: #49b0f7;
+@oddColor:blue;
+@baseColor:dodgerblue;
+.banner{
+    width:690px;
+    height: 340px;
+}
+.banner-box{
+    width:690px;
+    height: 340px;
+    margin: 0 auto;
+}
+.index_news{
+    margin-top:20px;
+    // opacity:0.5;
+    background:#f1f1f1;
+    width:100%;
+    height:700px;
+    padding-top:40px;
+    .news_list:nth-of-type(2n){
+      float:left;
+      width:32%;
+      .news_content{
+        overflow:hidden;
+        margin-top:22px;
+        border-top:5px solid #fff;
+        border-top-color:@evenColor;
+        box-sizing:border-box;
+        padding:24px 20px 0;
+        background:#ffffff;
+        width:100%;
+        height:600px;
+        .news_content_list{
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:rgba(0,0,0,0.50);
+          letter-spacing:0.17px;
+          text-align:left;
+          cursor: pointer;
+          .news_content_time{
+            color:@evenColor;
+          }
+        }
+      }
+      .index_title{
+        border-left:5px solid @evenColor;
+        p{
+          color:@evenColor;
+        }
+      }
+    }
+    .news_list:nth-of-type(2n+1){
+      width:32%;
+      float:left;
+      margin-right:1%;
+      margin-left:1%;
+      .news_content{
+        overflow:hidden;
+        margin-top:22px;
+        border-top:5px solid #fff;
+        border-top-color: @baseColor;
+        box-sizing:border-box;
+        padding:24px 20px 0;
+        background:#ffffff;
+        width:100%;
+        height:600px;
+        .news_content_list{
+          font-family:PingFangSC-Regular;
+          font-size:14px;
+          color:rgba(0,0,0,0.50);
+          letter-spacing:0.17px;
+          text-align:left;
+          .news_content_time{
+            color:@baseColor;
+          }
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .index_title{
+  width:100%;
+  border-left:5px solid #49b0f7;
+  height:24px;
+  p{
+    padding-left:30px;
+    font-size:24px;
+    color:#49b0f7;
+    line-height:24px;
+    text-align:left;
+    float:left;
+  }
+  span{
+    cursor:pointer;
+    float:right;
+    font-family:AvenirNext-Regular;
+    font-size:16px;
+    color:#ff8a0c;
+    letter-spacing:0;
+    text-align:center;
+  }
+}
