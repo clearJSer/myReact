@@ -24,19 +24,6 @@ class CommentList extends Component {
     this.state.data = props.comment.concat(this.state.data)
   }
 
-  shouldComponentUpdate() {
-    console.log(-1);
-    return true
-  }
-
-  componentWillMount() {
-    console.log(0);
-  }
-
-  componentWillUpdate() {
-    console.log(11);
-  }
-
   render() {
     console.log(1);
     return (
@@ -46,9 +33,6 @@ class CommentList extends Component {
     )
   }
 
-  componentDidUpdate() {
-    console.log(12);
-  }
 
   getList(arr) {
     return arr.map((value, index) => {
@@ -57,15 +41,16 @@ class CommentList extends Component {
   }
 
   componentDidMount() {
-    console.log(2);
-    fetch('http://localhost:9000/list')
-      .then(response => response.json())
-      .then(res => {
-        this.setState({
-          data: res
-        })
-      }).catch(e => console.log("Oops, error", e))
-
+//  fetch('http://localhost:9000/list')
+//    .then(response => response.json())
+//    .then(res => {
+//      this.setState({
+//        data: res
+//      })
+//    }).catch(e => console.log("Oops, error", e))
+      this.setState({
+          data: {"author":"xiaoming","content":"Hello"}
+      })
     emitter.on('inputChange', (data)=>{
       this.setState({
         data: [data].concat(this.state.data)
