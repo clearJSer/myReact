@@ -1,30 +1,27 @@
 import React, { Component } from 'react'
-
 import store from './store'
+import ButtonAction from './ButtonAction'
 
-import ButtonActions from './ButtonActions'
-
-class ButtonController extends Component {
-
+class FluxView extends Component {
+	
   constructor(props) {
     super(props)
-
-    this.state = {
-      count: store.getCount()
+    this.state={
+    	count:store.getCount()
     }
   }
-
-  changeCount() {
-    ButtonActions.addCount()
-
-    this.setState({
-      count: store.getCount()
-    })
+ 
+  changeCount(){
+  	ButtonAction.addCount();
+  	
+  	this.setState({
+  		count:store.getCount()
+  	})
   }
 
   render() {
     return (
-      <div>
+      <div style={{margin:'20px'}}>
         <span style={{padding: '0 20px'}}>{this.state.count}</span>
         <button onClick={this.changeCount.bind(this)}> + </button>
       </div>
@@ -32,4 +29,4 @@ class ButtonController extends Component {
   }
 }
 
-export default ButtonController
+export default FluxView

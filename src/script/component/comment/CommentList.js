@@ -13,7 +13,6 @@ class CommentList extends Component {
     this.state = {
       data: []
     }
-    console.log(-2);
   }
 
   static propTypes = {
@@ -49,7 +48,7 @@ class CommentList extends Component {
 //      })
 //    }).catch(e => console.log("Oops, error", e))
       this.setState({
-          data: {"author":"xiaoming","content":"Hello"}
+          data: [{"author":"老铁","content":"Hello"}]
       })
     emitter.on('inputChange', (data)=>{
       this.setState({
@@ -60,7 +59,7 @@ class CommentList extends Component {
 
   componentWillUnmount() {
     emitter.removeListener('inputChange',()=>{})
-    console.log(33);
+    console.log(333333333333);
   }
 }
 

@@ -52,7 +52,8 @@ class Left extends Component{
 		            <Menu.Item key="1"><Link to="/center/home">待办事项</Link></Menu.Item>
 		            <Menu.Item key="2"><Link to="/center/task">任务列表</Link></Menu.Item>
 		            <Menu.Item key="3"><Link to="/center/comment">评论</Link></Menu.Item>
-		            <Menu.Item key="4"><Link to="/center/task">todoList</Link></Menu.Item>
+		            <Menu.Item key="5"><Link to="/center/flux">fluxDemo</Link></Menu.Item>
+		            <Menu.Item key="4"><Link to="/center/todolist">todoList</Link></Menu.Item>
 		          </MenuItemGroup>
 		          
 		        </SubMenu>

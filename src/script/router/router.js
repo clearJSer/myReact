@@ -5,6 +5,11 @@ import UsersList from '../component/users/UsersList'
 import TaskList from '../component/task/TaskList'
 import Comment from '../component/comment/CommentBox'
 
+//flux 
+import FluxView from '../component/flux/FluxView'
+//to do List
+import ButtonController from '../component/fluxtodolist/ButtonController'
+
 import {Route,IndexRedirect } from 'react-router'
 //这是坑
 import React from 'react'
@@ -17,7 +22,8 @@ export default (
 			<Route path="users" component={UsersList}></Route>
 			<Route path="task" component={TaskList}></Route>
 			<Route path="comment" component={Comment}></Route>
-			<Route path="todoList" component={Comment}></Route>
+			<Route path="flux" component={FluxView}></Route>
+			<Route path="todolist" component={ButtonController}></Route>
 		</Route>
 	</Route>
 	

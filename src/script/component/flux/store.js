@@ -7,6 +7,6 @@ export default {
 
   setCount: function (payload) {
     this.count++
-    console.log(payload);
+    //console.log(payload);
   }
 }
