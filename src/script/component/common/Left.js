@@ -54,6 +54,8 @@ class Left extends Component{
 		            <Menu.Item key="3"><Link to="/center/comment">评论</Link></Menu.Item>
 		            <Menu.Item key="5"><Link to="/center/flux">fluxDemo</Link></Menu.Item>
 		            <Menu.Item key="4"><Link to="/center/todolist">todoList</Link></Menu.Item>
+		            <Menu.Item key="6"><Link to="/center/reactredux">react-redux</Link></Menu.Item>
+		            <Menu.Item key="7"><Link to="/center/todolist">test</Link></Menu.Item>
 		          </MenuItemGroup>
 		          
 		        </SubMenu>

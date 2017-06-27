@@ -9,7 +9,7 @@ import Comment from '../component/comment/CommentBox'
 import FluxView from '../component/flux/FluxView'
 //to do List
 import ButtonController from '../component/fluxtodolist/ButtonController'
-
+import ReactReduxButton from '../component/react-redux/ReactReduxButton'
 import {Route,IndexRedirect } from 'react-router'
 //这是坑
 import React from 'react'
@@ -24,6 +24,7 @@ export default (
 			<Route path="comment" component={Comment}></Route>
 			<Route path="flux" component={FluxView}></Route>
 			<Route path="todolist" component={ButtonController}></Route>
+			<Route path="reactredux" component={ReactReduxButton}></Route>
 		</Route>
 	</Route>
 	
